@@ -1,0 +1,8 @@
+node_modules/
+.expo/
+.eas/
+android/
+ios/
+AppData/
+Local/
+.ElevatedDiagnostics/

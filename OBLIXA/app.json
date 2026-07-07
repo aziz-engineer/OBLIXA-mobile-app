@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Oblixa",
+    "slug": "oblixa",
+    "version": "1.0.0",
+    "scheme": "oblixa",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "automatic",
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#F8F9FD"
+      },
+      "permissions": [
+        "CAMERA"
+      ],
+      "package": "com.med_aziz_omrani.oblixa"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "expo-secure-store",
+      "expo-image"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "7eef6d0e-9b00-4609-8567-c9fbd33d1768"
+      }
+    }
+  }
+}
