@@ -10,7 +10,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
 
 // ── Configuration de l'adresse du serveur ───────────────────────────
-const API_URL = 'http://192.168.100.5:5000/api'; 
+const API_URL = 'http://192.168.1.185:5000/api'; 
 
 export default function RegisterScreen() {
   const [nom, setNom]           = useState<string>('');

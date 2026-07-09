@@ -8,7 +8,7 @@ import axios from 'axios';
 import { Ionicons } from '@expo/vector-icons';
 
 // ── Configuration globale de l'adresse IP du serveur ──────────────────
-const API_URL = 'http://192.168.100.5:5000/api';
+const API_URL = 'http://192.168.1.185:5000/api';
 
 export default function LoginScreen() {
   const [email, setEmail] = useState<string>('');
