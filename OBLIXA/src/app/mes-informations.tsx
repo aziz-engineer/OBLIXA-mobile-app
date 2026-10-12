@@ -297,9 +297,9 @@ const styles = StyleSheet.create({
   loyaltyDivider: { height: 0.5, backgroundColor: COLORS.border },
   actionSection: { marginBottom: 28 },
   actionButton: { backgroundColor: COLORS.primary, borderRadius: 12, paddingVertical: 14, alignItems: 'center', marginBottom: 12 },
-  actionButtonText: { fontSize: 15, color: COLORS.onPrimary, fontWeight: '600' },
+  actionButtonText: { fontSize: 15, color: COLORS .accent,fontWeight: '600' },
   deleteButton: { backgroundColor: COLORS.error },
-  deleteButtonText: { color: COLORS.onError },
+  deleteButtonText: { color: COLORS.accent },
   cancelButton: { borderWidth: 1, borderColor: COLORS.border, borderRadius: 12, paddingVertical: 14, alignItems: 'center' },
   cancelText: { fontSize: 15, color: COLORS.textSecondary },
 });

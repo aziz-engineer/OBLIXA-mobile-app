@@ -5,7 +5,7 @@ import { router } from 'expo-router';
 import axios from 'axios';
 import { COLORS } from '../constants/colors';
 
-const API_URL = 'http://192.168.100.5:5000/api';
+const API_URL = 'http://192.168.152.118:5000/api';
 
 export default function ForgotPasswordScreen() {
   const [email, setEmail] = useState('');

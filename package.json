@@ -12,6 +12,7 @@
     "@react-native-async-storage/async-storage": "2.2.0",
     "bcryptjs": "^2.4.3",
     "cloudinary": "^1.41.0",
+    "core-js": "^3.49.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "expo-blur": "^56.0.3",
@@ -26,7 +27,8 @@
     "mongoose": "^7.0.0",
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
-    "multer-storage-cloudinary": "^4.0.0"
+    "multer-storage-cloudinary": "^4.0.0",
+    "ripgrep": "^0.3.1"
   },
   "devDependencies": {
     "@types/react": "~19.2.14",

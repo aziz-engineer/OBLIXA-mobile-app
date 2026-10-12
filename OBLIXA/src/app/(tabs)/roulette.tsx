@@ -8,8 +8,9 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 const { width } = Dimensions.get('window');
 const WHEEL_SIZE = width * 0.78;
 const RADIUS = WHEEL_SIZE / 2;
-
 const REWARDS = ['50 PTS', '100 PTS', '20 PTS', '500 PTS', '10 PTS', '250 PTS', '5 PTS', '1000 PTS'];
+
+const API_URL = 'http://192.168.152.118:5000/api';
 const COLORS = {
   bgNavy: '#0F172A',
   cardNavy: '#182338',
@@ -20,7 +21,6 @@ const COLORS = {
   borderGrey: '#334155',
   disabledGrey: '#475569',
 };
-
 export default function RouletteScreen() {
   const [spinning, setSpinning] = useState(false);
   const [winner, setWinner] = useState<string | null>(null);

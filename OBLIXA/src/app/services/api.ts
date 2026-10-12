@@ -1,7 +1,7 @@
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-export const API_URL = 'http://192.168.1.185:5000/api';
+export const API_URL = 'http://192.168.152.118:5000/api';
 
 const apiClient = axios.create({
   baseURL: API_URL,
@@ -49,6 +49,28 @@ export const getOfferById = async (id: string) => {
     return response.data;
   } catch (error: any) {
     console.error('Error fetching offer:', error);
+    throw error.response?.data || error.message;
+  }
+};
+
+export const getProduits = async (category?: string) => {
+  try {
+    const params: any = {};
+    if (category && category !== 'all') params.category = category;
+    const response = await apiClient.get('/produits', { params });
+    return response.data;
+  } catch (error: any) {
+    console.error('Error fetching produits:', error);
+    throw error.response?.data || error.message;
+  }
+};
+
+export const redeemProduit = async (produitId: string, shippingAddress: any) => {
+  try {
+    const response = await apiClient.post(`/produits/${produitId}/redeem`, { shippingAddress });
+    return response.data;
+  } catch (error: any) {
+    console.error('Error redeeming produit:', error);
     throw error.response?.data || error.message;
   }
 };

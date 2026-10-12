@@ -22,7 +22,6 @@ export default function RootLayout() {
       <Stack.Screen name="gerer-abonnement" />
       <Stack.Screen name="offreDetails" />
       <Stack.Screen name="notifications" />
-      <Stack.Screen name="roulette" />
     </Stack>
   );
 }
